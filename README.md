@@ -124,4 +124,113 @@ Flow Diagram :Coding / File Changes
               ↓
            GitHub Repository
 
+1. git init:
+
+Creates a Git repository in your current folder.
+
+Example:
+Normal folder → git init → Git repository ✅
+
+2. git status:
+
+Shows the current status of your files — for example, new, modified, staged, etc.
+
+3. git add :
+git add liton.txt
+
+Moves a specific file to the Staging Area.
+
+Or:
+
+git add .
+
+Adds all changed files to the Staging Area.
+
+4. git commit
+git commit -m "liton file added"
+
+Saves the staged changes as a commit in your Local Repository.
+
+Think of it as creating a checkpoint of your work.
+
+5. git push
+git push
+
+Sends your local commits to the GitHub/central repository.
+
+Direction:
+
+Local Repository → GitHub
+
+6. git restore
+git restore liton.txt
+
+Used to unstage changes or discard changes, depending on how the command is used.
+
+⚠️ Be careful with git restore because some options can permanently discard your changes.
+
+7. git log:
+
+Shows your commit history.
+
+Example:
+
+commit 790df17
+liton file added
+
+commit abc1234
+first commit
+
+8. git rm
+git rm liton.txt
+
+Deletes the file and stages the deletion.
+
+Then:
+
+git commit -m "delete liton file"
+git push
+
+Now the file will also be deleted from GitHub.
+
+9. git clone
+git clone <repository-url>
+
+Downloads the complete GitHub repository to your computer.
+
+Direction:
+
+GitHub → Computer
+
+Example:
+
+git clone https://github.com/username/project.git
+
+10. git pull:
+
+Downloads the latest changes from GitHub to your local repository.
+
+Direction:
+
+GitHub → Local Repository
+
+In your previous situation:
+
+git pull --rebase origin main
+
+means: Get the latest changes from GitHub and place your local commits on top of those changes.
+
+11. .gitignore
+
+.gitignore tells Git which files and folders should not be tracked.
+
+Example:
+
+target/
+.classpath
+.project
+.settings/
+
+For a Java/Spring Boot project, target/ is commonly ignored.
+
 
