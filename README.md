@@ -44,7 +44,7 @@ What is Git Hub Repository ?
 
   2) Private Repo (you choose who can see & who can commit)
 
-Project Git Repo URL : https://github.com/ashokitschool/sbi_loans_app.git
+Project Git Repo URL : https://github.com/Skliton5/Git-GitHub.git
 
 => Project team members will connect with git repository using its URL.
 
